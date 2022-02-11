@@ -2,7 +2,9 @@
 Está é uma atividade do curso de informatica para a internet, do Senac-RS.
 
 # ìcons
-- :pacakege: new functions
-- :up: finished project
-- :balloon: Updates
+- :package: new functions
+- :balloon: finished project
+- :up: Updates
 - :school_satchel: initial commit
+- :beetle: bug fix
+- :checkered_flag: release
