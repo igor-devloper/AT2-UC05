@@ -10,15 +10,18 @@
     box-sizing: border-box;
 }
 a.navbar-brand {
-  white-space: normal;
   text-align: center;
-  word-break: break-all;
+}
+a{
+  color: #000;
+  text-decoration: none;
+  transition: all 0.4s;
+}
+a:hover{
+  color: #fff;
 }
 
 /* Provide sufficient contrast against white background */
-a {
-  color: #000;
-}
 
 .btn-primary {
   color: #000;
@@ -44,16 +47,45 @@ li i{
   display: block;
   text-align: center;
   justify-content: center;
-  background-color: red;
+  background-color: #DA291C;
   border-radius: 0 3rem;
   padding: 1rem 1rem;
-  top: 6rem;
+  margin-top: 5rem;
+  font-family: 'Baloo Da 2', serif;
 }
-
+.FormPedido{
+  display: block;
+  text-align: center;
+  justify-content: center;
+  background-color: #DA291C;
+  border-radius: 0 3rem;
+  padding: 1rem 1rem;
+  margin-top: 5rem;
+}
+.FormPedido p{
+  font-family: 'Baloo Da 2', serif;
+}
+.FormPedido input{
+  border: none;
+  border-radius: 0.3rem;
+  padding: 0.3rem;
+  margin-left: 1rem;
+}
+.FormPedido input[type="submit"]{
+  font-size: 1.2rem;
+  font-family: 'Roboto Condensed', serif;
+  background-color: #FFC72C;
+  margin-top: 1rem;
+  transition: all 0.5s;
+}
+.FormPedido input[type="submit"]:hover{
+  opacity: 0.4;
+}
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
   font-size: 14px;
+  scroll-behavior: smooth;
 }
 @media (min-width: 768px) {
   html {
@@ -97,7 +129,7 @@ footer {
   justify-content: center;
   align-items: center;
   background-color: #FFC72C;
-  height: 6rem;
+  height: 7rem;
 }
 .footer-content{
   width: 60%;
@@ -110,6 +142,7 @@ footer {
   color:#000 ;
   font-size: 1.2rem;
   font-weight: 500;
+  margin-top: 1rem;
 
 }
 
@@ -117,11 +150,11 @@ footer {
   margin: 0 2rem;
   color:#000 ;
   font-size: 1.3rem;
-  border-top: 1rem;
+  margin-top: 1rem;
 }
 
 .social-list ul{
   display: flex;
-  border-top: 1rem;
+  margin-top: 1rem;
 
 }
