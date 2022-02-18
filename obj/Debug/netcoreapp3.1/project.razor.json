@@ -14407,6 +14407,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Cleoberto\\Desktop\\Projetos\\AT2-UC05\\Views\\Home\\Pedido.cshtml",
+      "TargetPath": "Views\\Home\\Pedido.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Cleoberto\\Desktop\\Projetos\\AT2-UC05\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"

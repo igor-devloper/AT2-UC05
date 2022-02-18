@@ -35,3 +35,4 @@ C:\Users\Cleoberto\Desktop\Projetos\AT2-UC05\obj\Debug\netcoreapp3.1\AT2-UC05.pd
 C:\Users\Cleoberto\Desktop\Projetos\AT2-UC05\obj\Debug\netcoreapp3.1\AT2-UC05.genruntimeconfig.cache
 C:\Users\Cleoberto\Desktop\Projetos\AT2-UC05\obj\Debug\netcoreapp3.1\AT2-UC05.csproj.CopyComplete
 C:\Users\Cleoberto\Desktop\Projetos\AT2-UC05\obj\Debug\netcoreapp3.1\Razor\Views\Home\carrinho.cshtml.g.cs
+C:\Users\Cleoberto\Desktop\Projetos\AT2-UC05\obj\Debug\netcoreapp3.1\Razor\Views\Home\Pedido.cshtml.g.cs

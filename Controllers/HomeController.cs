@@ -23,7 +23,11 @@ namespace AT2_UC05.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult carrinho()
+        {
+            return View();
+        }
+        public IActionResult Pedido()
         {
             return View();
         }
