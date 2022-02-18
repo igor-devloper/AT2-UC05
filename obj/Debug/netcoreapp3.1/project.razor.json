@@ -14407,11 +14407,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Cleoberto\\Desktop\\Projetos\\AT2-UC05\\Views\\Home\\Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\Users\\Cleoberto\\Desktop\\Projetos\\AT2-UC05\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
@@ -14429,6 +14424,11 @@
     {
       "FilePath": "c:\\Users\\Cleoberto\\Desktop\\Projetos\\AT2-UC05\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Cleoberto\\Desktop\\Projetos\\AT2-UC05\\Views\\Home\\carrinho.cshtml",
+      "TargetPath": "Views\\Home\\carrinho.cshtml",
       "FileKind": "mvc"
     },
     {
