@@ -2,20 +2,20 @@
 
 <div class="FormPedido">
 
-<form method="post" asp-action="Carrinho">
-  <p>
-    <label>Qual Produto você deseja -></label>
-    <input asp-for="descricao">
-  </p>
-  <p>
-    <label>Quantos você deseja -></label>
-    <input asp-for="quantidade">
-  </p>
-  <p>
-    <label>Qual o valor do Produto -></label>
-    <input asp-for="valor_unitario">
-  </p>
-  <input type="submit" value="Concluir o Pedido">
+  <form method="POST" asp-action="carrinho">
+    <p>
+      <label>Qual Produto você deseja -></label>
+      <input asp-for="descricao">
+    </p>
+    <p>
+      <label>Quantos você deseja -></label>
+      <input asp-for="quantidade">
+    </p>
+    <p>
+      <label>Qual o valor do Produto -></label>
+      <input asp-for="valor_unitario">
+    </p>
+    <input type="submit" value="Concluir o Pedido">
 
-</form>
+  </form>
 </div>

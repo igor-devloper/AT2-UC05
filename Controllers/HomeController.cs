@@ -31,16 +31,11 @@ namespace AT2_UC05.Controllers
     public IActionResult Pedido(string descricao, float valor_unitario, int quantidade)
     {
       Dados.PedidoAtual.AddPedido(new ItemPedido(descricao, valor_unitario,quantidade));
-      return RedirectToAction("carrinho");
+      return RedirectToAction("Carrinho");
     }
     public IActionResult Carrinho()
     {
       return View(Dados.PedidoAtual.InfosDoPedido());
-    }
-
-    private IActionResult View(Func<double> totalDoPedido)
-    {
-      throw new NotImplementedException();
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
