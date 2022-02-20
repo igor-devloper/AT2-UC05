@@ -10,19 +10,27 @@ namespace AT2_UC05.Models
     {
         listaDePedido.Add(new ItemPedido(descricao, valor_unitario,quantidade));
     }
-    public double TotalDoPedido()
+
+    internal void AddPedido(ItemPedido itemPedido)
+    {
+      throw new NotImplementedException();
+    }
+
+    public List<ItemPedido> InfosDoPedido()
+    {
+      return listaDePedido;
+    }
+    public double totalDoPedido()
     {
       double total = 0;
 
 
        foreach(var itens in listaDePedido)
       {
-        Console.WriteLine("Produto: {0}, Valor: {1}, Quantidade: {2}" , itens.descricao, itens.valor_unitario, itens.quantidade );
         total = total + (itens.valor_unitario * itens.quantidade);
       }
       return total;
     }
-  
   }
 
 }

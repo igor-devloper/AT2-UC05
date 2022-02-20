@@ -2,7 +2,7 @@
 
 <div class="FormPedido">
 
-<form>
+<form method="post" asp-action="Carrinho">
   <p>
     <label>Qual Produto você deseja -></label>
     <input asp-for="descricao">
@@ -16,5 +16,6 @@
     <input asp-for="valor_unitario">
   </p>
   <input type="submit" value="Concluir o Pedido">
+
 </form>
 </div>

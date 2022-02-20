@@ -1,1 +1,19 @@
-﻿
+﻿@model List<ItemPedido> 
+
+  <h3>Itens do seu Carrinho</h3>
+  <table class="table">
+
+    <tr>  
+      <th>Produto</th>
+      <th>Valor</th>
+      <th>Quantidade</th>
+    </tr>
+      @foreach (var itens in Model)
+      {
+        <tr>
+          <td>@itens.descricao</td>
+          <td>@itens.valor_unitario</td>
+          <td>@itens.quantidade</td>
+        </tr>
+      }
+  </table>

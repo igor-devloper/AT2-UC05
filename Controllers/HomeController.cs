@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using AT2_UC05.Models;
+using MVC.models;
 
 namespace AT2_UC05.Controllers
 {
@@ -22,17 +23,27 @@ namespace AT2_UC05.Controllers
         {
             return View();
         }
+          public IActionResult Pedido()
+    {
+      return View();
+    }
+    [HttpPost]
+    public IActionResult Pedido(string descricao, float valor_unitario, int quantidade)
+    {
+      Dados.PedidoAtual.AddPedido(new ItemPedido(descricao, valor_unitario,quantidade));
+      return RedirectToAction("carrinho");
+    }
+    public IActionResult Carrinho()
+    {
+      return View(Dados.PedidoAtual.InfosDoPedido());
+    }
 
-        public IActionResult carrinho()
-        {
-            return View();
-        }
-        public IActionResult Pedido()
-        {
-            return View();
-        }
+    private IActionResult View(Func<double> totalDoPedido)
+    {
+      throw new NotImplementedException();
+    }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
