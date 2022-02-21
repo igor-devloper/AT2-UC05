@@ -15,6 +15,17 @@ namespace AT2_UC05.Models
     {
       return listaDePedido;
     }
+     public double TotalDoPedido()
+    {
+      double total = 0;
+
+
+       foreach(var itens in listaDePedido)
+      {
+        total = total + (itens.valor_unitario * itens.quantidade);
+      }
+      return total;
+    }
     
   }
 

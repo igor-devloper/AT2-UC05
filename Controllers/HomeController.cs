@@ -37,6 +37,13 @@ namespace AT2_UC05.Controllers
     {
       List<ItemPedido> pedidos = Dados.PedidoAtual.InfosDoPedido();
       return View(pedidos);
+      
+    }
+   
+
+    private IActionResult View(Func<IActionResult> pedido)
+    {
+      throw new NotImplementedException();
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
