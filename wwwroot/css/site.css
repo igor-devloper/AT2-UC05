@@ -174,10 +174,32 @@ table{
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 5rem;
-  padding-left: 25rem;
-  width: 100%;
-
+  margin-top: 3rem;
+  padding-left: 24rem;
+  border-radius: 1rem;
+  
+}
+th{
+  background-color: #DA291C;
+  padding: 1rem;
+  align-items: center;
+  text-align: center;
+  border-radius: 1rem;
+  font-family: 'Baloo Da 2', serif;
+  font-size: 1.5rem;
+}
+td{
+  background-color: #FFC72C;
+  border-radius: 0.5rem;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  margin-top: 10rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #fff;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 h3{
   display: flex;
