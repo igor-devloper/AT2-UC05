@@ -30,12 +30,13 @@ namespace AT2_UC05.Controllers
     [HttpPost]
     public IActionResult Pedido(string descricao, float valor_unitario, int quantidade)
     {
-      Dados.PedidoAtual.AddPedido(new ItemPedido(descricao, valor_unitario,quantidade));
+      Dados.PedidoAtual.AddPedido(descricao, valor_unitario,quantidade);
       return RedirectToAction("Carrinho");
     }
     public IActionResult Carrinho()
     {
-      return View(Dados.PedidoAtual.InfosDoPedido());
+      List<ItemPedido> pedidos = Dados.PedidoAtual.InfosDoPedido();
+      return View(pedidos);
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

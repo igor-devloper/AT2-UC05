@@ -1,19 +1,23 @@
-﻿@model List<ItemPedido> 
+﻿@model List<ItemPedido>
 
-  <h3>Itens do seu Carrinho</h3>
-  <table class="table">
-
-    <tr>  
+<h3>Itens do seu Carrinho</h3>
+<table class="table">
+  <thead>
+    <tr>
       <th>Produto</th>
       <th>Valor</th>
       <th>Quantidade</th>
     </tr>
-      @foreach (ItemPedido itens in Model)
-      {
-        <tr>
-          <td>@itens.descricao</td>
-          <td>@itens.valor_unitario</td>
-          <td>@itens.quantidade</td>
-        </tr>
-      }
-  </table>
+  </thead>
+  <tbody>
+    @foreach (ItemPedido item in Model)
+    {
+      <tr>
+        <td>@item.descricao</td>
+        <td>@item.valor_unitario</td>
+        <td>@item.quantidade</td>
+      </tr>
+    }
+  </tbody>
+</table>
+<p>O total do seu peido -></p>

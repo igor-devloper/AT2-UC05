@@ -11,11 +11,6 @@ namespace AT2_UC05.Models
         listaDePedido.Add(new ItemPedido(descricao, valor_unitario,quantidade));
     }
 
-    internal void AddPedido(ItemPedido itemPedido)
-    {
-      throw new NotImplementedException();
-    }
-
     public List<ItemPedido> InfosDoPedido()
     {
       return listaDePedido;

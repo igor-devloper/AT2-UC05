@@ -36,7 +36,18 @@ a:hover{
   padding: 0.2rem 1rem;
   color: #fff;
   transition: all 0.5s;
+  margin-left: 53rem;
+ 
 }
+.navbar-brand{
+  
+  font-weight: 1000;
+  font-family: 'Mulish', serif;
+  background-color: #FFC72C;
+  padding: 0 0.5rem;
+  border-radius: 0 1rem;
+}
+
 li i{
   color: #fff;
 }
@@ -84,7 +95,7 @@ li i{
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
-  font-size: 14px;
+  font-size: 20px;
   scroll-behavior: smooth;
 }
 @media (min-width: 768px) {
@@ -129,7 +140,7 @@ footer {
   justify-content: center;
   align-items: center;
   background-color: #FFC72C;
-  height: 7rem;
+  height: 5rem;
 }
 .footer-content{
   width: 60%;
@@ -157,4 +168,22 @@ footer {
   display: flex;
   margin-top: 1rem;
 
+}
+table{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 5rem;
+  padding-left: 25rem;
+  width: 100%;
+
+}
+h3{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Baloo Da 2', serif;
+  font-size: 2rem;
+  color: #FFC72c;
 }
