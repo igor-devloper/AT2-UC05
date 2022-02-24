@@ -1,4 +1,5 @@
-﻿@model List<ItemPedido>
+﻿@using MVC.models
+@model List<ItemPedido>
 
 
 <h3>Itens do seu Carrinho</h3>
@@ -21,4 +22,7 @@
     }
   </tbody>
 </table>
-<a href="/Pedido">Inserir Novo Produto</a>
+<br>
+
+<p class="Total-pedido">O total do seu pedido é  R$@Dados.PedidoAtual.TotalDoPedido()</p>
+<a class="inserir" href="/Home/Pedido">Inserir Novo Produto</a>

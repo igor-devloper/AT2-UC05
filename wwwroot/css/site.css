@@ -190,7 +190,6 @@ th{
 }
 td{
   background-color: #FFC72C;
-  border-radius: 0.5rem;
   align-items: center;
   text-align: center;
   justify-content: center;
@@ -200,6 +199,7 @@ td{
   font-weight: 500;
   color: #fff;
   font-family: 'Roboto Condensed', sans-serif;
+  border-radius: 0.3rem;
 }
 h3{
   display: flex;
@@ -208,4 +208,22 @@ h3{
   font-family: 'Baloo Da 2', serif;
   font-size: 2rem;
   color: #FFC72c;
+}
+.inserir{
+  background-color: #DA291C;
+  padding: 0.8rem;
+  justify-content: center;
+  align-items: center ;
+  text-align: center;
+  margin-top: 3rem;
+  text-decoration: none;
+  border-radius: 1rem;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.Total-pedido{
+  background-color: #DA291C;
+  padding: 0.8rem;
+  margin-right: 59rem;
+  border-radius: 1rem;
+  font-family: 'Roboto Condensed', sans-serif;
 }
