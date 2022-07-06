@@ -10,36 +10,36 @@ using MVC.models;
 
 namespace AT2_UC05.Controllers
 {
-    public class HomeController : Controller
+  public class HomeController : Controller
+  {
+    private readonly ILogger<HomeController> _logger;
+
+    public HomeController(ILogger<HomeController> logger)
     {
-        private readonly ILogger<HomeController> _logger;
+      _logger = logger;
+    }
 
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
-
-        public IActionResult Index()
-        {
-            return View();
-        }
-          public IActionResult Pedido()
+    public IActionResult Index()
+    {
+      return View();
+    }
+    public IActionResult Pedido()
     {
       return View();
     }
     [HttpPost]
     public IActionResult Pedido(string descricao, float valor_unitario, int quantidade)
     {
-      Dados.PedidoAtual.AddPedido(descricao, valor_unitario,quantidade);
+      Dados.PedidoAtual.AddPedido(descricao, valor_unitario, quantidade);
       return RedirectToAction("Carrinho");
     }
     public IActionResult Carrinho()
     {
       List<ItemPedido> pedidos = Dados.PedidoAtual.InfosDoPedido();
       return View(pedidos);
-      
+
     }
-   
+
 
     private IActionResult View(Func<IActionResult> pedido)
     {
@@ -47,9 +47,9 @@ namespace AT2_UC05.Controllers
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
+    public IActionResult Error()
+    {
+      return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
+  }
 }
